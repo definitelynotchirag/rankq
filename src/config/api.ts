@@ -7,7 +7,7 @@ const getBaseUrl = (): string => {
     }
     return 'http://localhost:8080/api/v1';
   }
-  return 'https://api.rankq.com/api/v1';
+  return 'https://api.rankq.chiragx.me/api/v1';
 };
 
 export const API_CONFIG = {
