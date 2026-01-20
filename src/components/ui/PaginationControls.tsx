@@ -143,6 +143,7 @@ const styles = StyleSheet.create({
   pageSizeContainer: {
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
     gap: spacing.sm,
   },
   label: {
@@ -206,6 +207,8 @@ const styles = StyleSheet.create({
     elevation: 4,
     borderBottomWidth: 4,
     borderBottomColor: colors.accent.secondary, // Using darker green for depth
+    width: 120,
+    justifyContent: 'center',
   },
   navButtonDisabled: {
     backgroundColor: colors.background.tertiary, // Grey background when disabled

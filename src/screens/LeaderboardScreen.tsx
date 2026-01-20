@@ -243,7 +243,7 @@ export const LeaderboardScreen: React.FC<LeaderboardScreenProps> = () => {
           <View style={styles.simulationControls}>
             {simulationRunning && selectedConfig && (
               <Text style={styles.statsText}>
-                {Math.round((1000 / selectedConfig.interval_ms) * selectedConfig.updates_per_tick)} Games/sec
+                {Math.round((1000 / selectedConfig.interval_ms) * selectedConfig.updates_per_tick)} Games/s
               </Text>
             )}
             <Pressable

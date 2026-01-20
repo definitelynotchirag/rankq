@@ -60,7 +60,7 @@ export const SimulationConfigModal: React.FC<SimulationConfigModalProps> = ({
       >
         <Pressable style={styles.backdrop} onPress={handleCancel} />
         <View style={styles.modalContainer}>
-          <Text style={styles.title}>Simulation Configuration</Text>
+          <Text style={styles.title}>Simulation Config</Text>
           <Text style={styles.subtitle}>Configure simulation parameters</Text>
 
           <View style={styles.inputGroup}>
@@ -100,7 +100,7 @@ export const SimulationConfigModal: React.FC<SimulationConfigModalProps> = ({
               style={[styles.button, styles.confirmButton]}
               onPress={handleConfirm}
             >
-              <Text style={styles.confirmButtonText}>Start Simulation</Text>
+              <Text style={styles.confirmButtonText}>Start</Text>
             </Pressable>
           </View>
         </View>
