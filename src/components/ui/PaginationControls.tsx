@@ -195,7 +195,7 @@ const styles = StyleSheet.create({
   navButton: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: spacing.md,
+    paddingHorizontal: spacing.sm,
     paddingVertical: spacing.sm,
     borderRadius: borderRadius.md,
     backgroundColor: colors.accent.primary,
@@ -207,7 +207,7 @@ const styles = StyleSheet.create({
     elevation: 4,
     borderBottomWidth: 4,
     borderBottomColor: colors.accent.secondary, // Using darker green for depth
-    width: 120,
+    width: 100,
     justifyContent: 'center',
   },
   navButtonDisabled: {
