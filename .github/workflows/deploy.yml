@@ -18,7 +18,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           source: "."
-          target: "/home/rankq"
+          target: "/home/chirag/rankq"
 
       - name: SSH into VPS and rebuild
         uses: appleboy/ssh-action@v1.0.3
@@ -27,7 +27,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /home/rankq/backend
+            cd /home/chirag/rankq/backend
             docker compose down
             docker compose build
             docker compose up -d
