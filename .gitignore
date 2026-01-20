@@ -39,3 +39,40 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Go
+backend/bin/
+backend/tmp/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+go.work.sum
+vendor/
+go
+
+# Go build cache / CGO
+_cgo_*
+*.cgo1.go
+*.cgo2.c
+_obj/
+_test/
+*.h
+*.c
+!backend/**/*.c
+!backend/**/*.h
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+.env.*.local
