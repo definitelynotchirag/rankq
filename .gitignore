@@ -76,3 +76,5 @@ _test/
 .env
 .env.local
 .env.*.local
+
+.claude
