@@ -7,10 +7,11 @@ import {
   useFonts,
 } from '@expo-google-fonts/montserrat';
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ActivityIndicator, View } from 'react-native';
 import { AppNavigator } from './src/navigation/AppNavigator';
 import { colors } from './src/theme/colors';
+import { initializeAnalytics } from './src/services/analytics';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -20,6 +21,11 @@ export default function App() {
     Montserrat_700Bold,
     Montserrat_800ExtraBold,
   });
+
+  // Initialize Vercel Analytics on app startup
+  useEffect(() => {
+    initializeAnalytics();
+  }, []);
 
   if (!fontsLoaded) {
     return (
